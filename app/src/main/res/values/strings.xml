@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Risk Analysis For SMB</string>
+
+
+    <string name="submit_btn">Submit</string>
+    <string name="browse">browse</string>
+    <string name="notification_details">CSV processed successfully.\nOutput CSV can be found at</string>
+    <string name="high_risk_checkbox">High Risk</string>
+    <string name="moderate_risk_checkbox">Moderate Risk</string>
+    <string name="button">NEXT</string>
+    <string name="get_risk">Get Risk</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="name_house_building_number">Name, House/Building Number</string>
+    <string name="street_address">Street Address</string>
+    <string name="zip">Zip</string>
+    <string name="single_address_risk_details">Risk associated with your address</string>
+    <string name="crime_risk">Crime Risk</string>
+    <string name="weather_risk">Weather Risk</string>
+    <string name="risk_score">Risk Score: </string>
+    <string name="risk_severity">Risk Severity: </string>
+    <string name="insure_shipment">Insure Shipment (@ 10% of shipment value)</string>
+    <string name="express_shipment">Express Shipment ($2 for next day delivery)</string>
+    <string name="hold_shipment">Hold Shipment ($3 for holding up to 5 days)</string>
+    <string name="select_address_file">Select Address File.</string>
+
+</resources>

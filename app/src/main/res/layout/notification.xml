@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/notification_text_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="@string/notification_details"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/output_file_id"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/details_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/output_file_id"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="71dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ntf_high_risk_val_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/details_id"
+        android:layout_width="337dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:text="Details of Addresses with Risks"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/high_risk_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_file_id"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/high_risk_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:text="High Crime"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/high_risk_checkBox_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/ntf_high_risk_val_id"
+        android:layout_width="86dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/high_risk_header"
+        app:layout_constraintLeft_toRightOf="@+id/high_risk_header"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <CheckBox
+        android:id="@+id/high_risk_checkBox_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:checked="true"
+        android:text="Insure Shipment (@ 20% of shipment value)"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/moderate_risk_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Moderate Crime"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/moderate_risk_cb_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/ntf_moderate_risk_val_id"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/moderate_risk_header"
+        app:layout_constraintLeft_toRightOf="@+id/moderate_risk_header"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <CheckBox
+        android:id="@+id/moderate_risk_cb_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:checked="true"
+        android:text="Insure Shipment (@ 10% of shipment value)"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/high_risk_checkBox_id"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/low_crime_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Low Crime"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/low_crime_cb_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/ntf_low_crime_val_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/low_crime_cb_id"
+        app:layout_constraintLeft_toLeftOf="@+id/ntf_high_risk_val_id"
+        app:layout_constraintRight_toRightOf="@+id/ntf_high_risk_val_id"
+        app:layout_constraintTop_toTopOf="@+id/low_crime_header"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <CheckBox
+        android:id="@+id/low_crime_cb_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:checked="true"
+        android:text="Insure Shipment (@ 5% of shipment value)"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moderate_risk_cb_id"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/weather_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:text="Weather"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/ntf_weather_val_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/ntf_low_crime_val_id"
+        app:layout_constraintRight_toRightOf="@+id/ntf_low_crime_val_id"
+        app:layout_constraintTop_toTopOf="@+id/weather_header"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ntf_submit_notification_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/low_crime_cb_id"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <RadioButton
+            android:id="@+id/weather_express_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Express Shipment ($2 for next day delivery)"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            app:buttonTint="@color/colorAccent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+            android:id="@+id/weather_hold_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Hold Shipment ($3 for holding up to 5 days)"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            app:buttonTint="@color/colorAccent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="32dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ntf_submit_notification_btn"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/mybutton"
+        android:text="@string/button"
+        android:textColor="@color/colorButtonText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/radioGroup2"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteY="466dp" />
+
+
+</android.support.constraint.ConstraintLayout>
